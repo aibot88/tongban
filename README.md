@@ -1,17 +1,17 @@
-# 上海办事指南 Codex Skill
+# 上海办事指南 Claw Skill
 
 > 把“我该找哪个部门？”变成一条可执行的上海办事路径。
 
 ![Version](https://img.shields.io/badge/version-0.1.0-bb8a55)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Skill](https://img.shields.io/badge/Codex%20Skill-valid-blue)
+![Skill](https://img.shields.io/badge/Claw%20Skill-valid-blue)
 ![Data](https://img.shields.io/badge/data-3784%20items%20%2F%2059%20departments-8e6f5a)
 
 ![上海办事指南 Logo](assets/logo.svg)
 
 ## 🎯 About
 
-上海政务服务入口多、事项名长、个人/法人口径又容易混在一起；用户常常只知道“我要办一件事”，却不知道该找哪个部门。这个 Codex Skill 基于上海“一网通办”公开事项数据，帮助 Codex 从自然语言描述中匹配市级部门、候选事项、线上办理标记和官方办事指南链接。
+上海政务服务入口多、事项名长、个人/法人口径又容易混在一起；用户常常只知道“我要办一件事”，却不知道该找哪个部门。这个 Claw Skill 基于上海“一网通办”公开事项数据，帮助 Claw 从自然语言描述中匹配市级部门、候选事项、线上办理标记和官方办事指南链接。
 
 首版内置 59 个市级部门、3784 条清洗事项记录，并额外包含一组“必须覆盖”的用户指定事项名称。它不会替代官方政策解释，而是让用户更快知道下一步该去哪查、找谁办、哪里需要复核。
 
@@ -29,12 +29,12 @@ Use $shanghai-service-guide 我在上海想办理养犬登记相关查询，应�
 
 ## 🚀 Quick Start
 
-复制 Skill 到 Codex skills 目录：
+复制 Skill 到 Claw skills 目录：
 
 ```bash
 git clone <your-repo-url> shanghai-service-guide-skill
 cd shanghai-service-guide-skill
-cp -R shanghai-service-guide "${CODEX_HOME:-$HOME/.codex}/skills/"
+cp -R shanghai-service-guide "${Claw_HOME:-$HOME/.Claw}/skills/"
 ```
 
 立即使用：
@@ -164,7 +164,7 @@ python3 shanghai-service-guide/scripts/fetch_zwdt.py \
 
 1. Fork 仓库并创建分支：`git checkout -b feat/your-change`
 2. 修改数据、脚本或 Skill 指令
-3. 运行 `validate_data.py` 和 Codex Skill 校验
+3. 运行 `validate_data.py` 和 Claw Skill 校验
 4. 提交 PR，并说明数据来源、变更范围和验证结果
 
 ## ⚠️ Disclaimer
