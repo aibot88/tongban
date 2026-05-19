@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+
+# Generated intermediate fetch output. Keep normalized references committed.
+shanghai-service-guide/references/raw_items.json
